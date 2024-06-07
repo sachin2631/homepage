@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Concert+One&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Jersey+25&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lugrasimo&family=Macondo&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&family=Yatra+One&family=Young+Serif&display=swap"
+    rel="stylesheet">
+</head>
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+    font-family: Inter;
+  }
+
+  .container {
+    margin: 50px 100px 100px 100px;
+  }
+
+  /* .box1{ */
+  /* border: 1px solid black; */
+  /* } */
+  .row {
+    /* border: 1px solid yellow; */
+    display: flex;
+  }
+
+  .col1 {
+    width: 50%;
+    /* border: 1px solid red; */
+  }
+
+  .col2 {
+    display: flex;
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    /* border: 1px solid rebeccapurple; */
+  }
+
+  .col2 a {
+    margin-left: 37px;
+    text-decoration: none;
+    color: hsl(236, 13%, 42%);
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  .col2 a:hover {
+    color: hsl(5, 85%, 63%);
+  }
+
+  .body {
+    display: flex;
+    margin-top: 35px;
+  }
+
+  /* .img{
+    border: 1px solid red;
+  } */
+  .imgbody {
+    margin-right: 20px;
+    width: 75%;
+  }
+
+  .img img {
+    height: 290px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .new {
+    /* line-height: 10px; */
+    background: hsl(240, 100%, 5%);
+    ;
+    width: 28%;
+    color: hsl(35, 77%, 62%);
+    ;
+    /* border: 1px solid red; */
+    padding: 20px 20px 10px 20px;
+  }
+
+  .new h1 {
+    margin-top: 10px;
+  }
+
+  .hn {
+    margin: 30px 0;
+  }
+
+  .new h3 {
+    margin-bottom: 10px;
+    color: hsl(36, 100%, 99%);
+  }
+
+  .new p {
+    font-size: 15px;
+    color: hsl(233, 8%, 79%);
+  }
+
+  .web3 {
+    display: flex;
+  }
+
+  .w31 {
+    /* border: 1px solid green; */
+    letter-spacing: 5px;
+    margin-top: 10px;
+    width: 55%;
+    font-size: 30px;
+    line-height: 60px;
+  }
+
+  .w32 {
+    margin-top: 10px;
+    /* padding: top; */
+    /* letter-spacing: 0.5px; */
+    font-size: 25px;
+    /* border: 1px solid green; */
+    width: 45%;
+    line-height: 27px;
+  }
+
+  .web3 {
+    margin-top: 10px;
+  }
+.wbtn:hover{
+  color: hsl(36, 100%, 99%);
+  background-color: hsl(240, 100%, 5%);
+  border: 1px solid hsl(240, 100%, 5%);
+}
+
+  .wbtn {
+    background-color: hsl(5, 85%, 63%);
+    border: 1px solid hsl(5, 85%, 63%);
+    color: hsl(240, 100%, 5%);
+    border-radius: 0;
+    font-weight: 800;
+    padding: 12px 17px;
+    margin-top: 30px;
+    letter-spacing: 4px;
+  }
+
+  .w32 p {
+    word-spacing: 1px;
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(236, 13%, 42%);
+  }
+
+  .hn p {
+    line-height: 23px;
+    /* word-spacing: 1px; */
+  }
+
+  /* .new:nth-last-child(1){
+  margin-bottom: 10px;
+} */
+.card{
+  margin-top: 70px;
+  display: flex;
+}
+.cardimg{
+  padding: 20px 20px 20px 0;
+  width: 10%;
+  /* margin-right: 30px; */
+  overflow: hidden;
+}
+.cardimg img{
+  object-fit: cover;
+  width: 100%;
+  /* height: 80%; */
+}
+.cardb{
+  color: hsl(240, 100%, 5%);
+  font-weight: 400;
+  font-size: 15px;
+  display: flex;
+  margin-right: 50px;
+  /* overflow: hidden; */
+  width:100%;
+  /* padding: 10px; */
+}
+.cardimg{
+  width: 50%;
+}
+.cardtxt{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  padding: 20px 0 0 0;
+  line-height: 25px;
+  width: 90%;
+}
+.cardtxt h2{
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-weight: 800;
+  color: hsl(5, 85%, 63%);
+}
+.cardtxt a{
+  color: hsl(240, 100%, 5%);
+  text-decoration: none;
+  font-weight: 800!important;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+.cardtxt p{
+  font-weight: 400;
+  color:hsl(236, 13%, 42%);
+}
+.cardtxt a:hover{
+  
+  color: hsl(5, 85%, 63%);
+}
+</style>
+
+<body>
+  <div class="container">
+    <div class="box1">
+      <div class="row">
+        <div class="col1">
+          <img src="assets/images/logo.svg" alt="">
+        </div>
+        <div class="col2">
+          <a href="">Home</a>
+          <a href="">New</a>
+          <a href="">Popular</a>
+          <a href="">Trending</a>
+          <a href="">Category</a>
+        </div>
+      </div>
+      <div class="body">
+        <div class="imgbody">
+          <div class="img">
+            <img src="C:\Users\SHARM\OneDrive\Desktop\news-homepage-main\assets\images\image-web-3-desktop.jpg" alt="">
+          </div>
+          <div class="web3">
+            <div class="w31">
+              <h1>The Bright <br>Future of <br>Web 3.0?</h1>
+            </div>
+            <div class="w32">
+              <p>
+                We dive into the next evolution of the web that claims to put the power of the platforms back into the
+                hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <a href="">
+                <button type="button" class="wbtn">READ MORE</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="new">
+          <h1>New</h1>
+          <div class="hn">
+            <h3>Hydrogen VS Electric Cars </h3>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
+          <hr>
+          <div class="hn">
+            <h3>The Downsides of AI Artistry</h3>
+            <p>What are the possible adverse effects of on-demand AI image generation?</p>
+          </div>
+          <hr>
+          <div style="margin-bottom: 10px;" class="hn">
+            <h3>Is VC Funding Drying Up?</h3>
+            <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="cardb">
+          <div class="cardimg">
+            <img src="assets/images/image-retro-pcs.jpg" alt="">
+          </div>
+          <div class="cardtxt">
+            <h2>01</h2>
+            <a href="#"><h3>Reviving Retro PCs</h3></a>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
+        <div class="cardb">
+          <div class="cardimg">
+            <img src="assets/images/image-top-laptops.jpg" alt="">
+          </div>
+          <div class="cardtxt">
+            <h2>02</h2>
+            <a href="#"><h3>Top 10 Laptops of 2022</h3></a>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+        <div style="margin-right: 0;" class="cardb">
+          <div class="cardimg">
+            <img src="assets/images/image-gaming-growth.jpg" alt="">
+          </div>
+          <div class="cardtxt">
+            <h2>03</h2>
+           <a href="#"> <h3>The Growth of Gaming</h3></a>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> displays site properly based on user's device
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | News homepage</title>
+
+  Feel free to remove these styles or customise in your own stylesheet 👍
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  Home
+  New
+  Popular
+  Trending
+  Categories
+
+  
+
+  
+
+  Read more
+
+  New 
+
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html> -->
